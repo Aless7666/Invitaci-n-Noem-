@@ -52,8 +52,8 @@ input{font-family:'Fredoka', sans-serif; font-size:17px; padding:12px 14px; bord
 </div>
 
 <div class="bloque">
-<p class="titulo">¿Qué música quieres?</p>
-<p class="texto">Escribe la canción que no puede faltar</p>
+<p class="texto">Apreciamos mucho tu presencia, y queremos que te sientas cómodo y a gusto. Por eso, ayúdanos a armar la música de la fiesta.</p>
+<p class="titulo">¿Qué canción no puede faltar?</p>
 <input id="cancion" type="text" placeholder="Nombre de la canción">
 <input id="artista" type="text" placeholder="Artista">
 <button class="boton" onclick="enviarCancion()">Enviar</button>
@@ -66,7 +66,7 @@ input{font-family:'Fredoka', sans-serif; font-size:17px; padding:12px 14px; bord
 <span class="pendiente">Lista de regalos o cuenta por confirmar</span>
 </div>
 
-
+<p class="fin">No faltes</p>
 </div>
 
 </main>
@@ -93,7 +93,7 @@ method: 'POST',
 mode: 'no-cors',
 body: JSON.stringify({cancion: c, artista: a})
 });
-aviso.textContent = '¡Gracias! Tu canción fue enviada';
+aviso.textContent = '¡Qué buena elección!';
 document.getElementById('cancion').value = '';
 document.getElementById('artista').value = '';
 }
