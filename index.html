@@ -31,6 +31,11 @@ input{font-family:'Fredoka', sans-serif; font-size:17px; padding:12px 14px; bord
 .boton{display:block; font-family:'Fredoka', sans-serif; font-size:17px; font-weight:600; padding:13px 16px; border:none; border-radius:999px; background:var(--verde); color:#1F4D2A; text-align:center; cursor:pointer; margin-top:12px; width:100%}
 .boton:hover{filter:brightness(.95)}
 .aviso{font-family:'Kalam', cursive; font-size:20px; color:var(--texto); margin:10px 0 0; min-height:24px}
+.regalos{list-style:none; padding:0; margin:12px 0 0; display:flex; flex-direction:column; gap:10px; text-align:left}
+.regalo{background:var(--crema); border:2px dashed var(--rosa); border-radius:14px; padding:10px 14px; display:flex; align-items:center; gap:12px; flex-wrap:wrap}
+.ico{font-size:30px; width:44px; text-align:center; flex-shrink:0}
+.nom{flex:1; min-width:0; font-family:'Fredoka', sans-serif; font-size:17px; font-weight:600; color:var(--texto-oscuro)}
+.ver{font-family:'Fredoka', sans-serif; font-size:14px; font-weight:600; background:var(--verde); color:#1F4D2A; padding:7px 12px; border-radius:999px; text-decoration:none; white-space:nowrap}
 .fin{font-family:'Kalam', cursive; font-size:34px; font-weight:700; color:var(--texto); text-align:center; margin-top:10px}
 </style>
 </head>
@@ -63,10 +68,18 @@ input{font-family:'Fredoka', sans-serif; font-size:17px; padding:12px 14px; bord
 
 <div class="bloque">
 <p class="titulo">Lista de Regalos</p>
-<span class="pendiente">Regalos</span>
+<ul class="regalos">
+<li class="regalo"><span class="ico">🍎</span><span class="nom">Un kilo de fruta</span></li>
+<li class="regalo"><span class="ico">💄</span><span class="nom">Maquillaje</span></li>
+<li class="regalo"><span class="ico">👜</span><span class="nom">Accesorios</span></li>
+<li class="regalo"><span class="ico">🎄</span><span class="nom">Taza de Navidad</span><a class="ver" href="https://www.metro.pe/taza-krea-pinos-navidad-326ml-1060693/p" target="_blank" rel="noopener">Ver en Metro</a></li>
+<li class="regalo"><span class="ico">🍵</span><span class="nom">Otra taza</span><a class="ver" href="https://www.metro.pe/tazon-krea-realce-boho-1044517/p" target="_blank" rel="noopener">Ver en Metro</a></li>
+<li class="regalo"><span class="ico">🕯️</span><span class="nom">Paquete de velas</span><a class="ver" href="https://www.metro.pe/pack-2o-velas-krea-t-light-ecru-1046393/p" target="_blank" rel="noopener">Ver en Metro</a></li>
+<li class="regalo"><span class="ico">🕯️</span><span class="nom">Vela</span><a class="ver" href="https://www.metro.pe/vela-krea-pilar-7cm-ecru-1046397/p" target="_blank" rel="noopener">Ver en Metro</a></li>
+</ul>
 </div>
 
-  
+
 </div>
 
 </main>
